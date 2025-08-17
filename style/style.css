@@ -11,7 +11,7 @@
     text-decoration: none;
 
 }
-dhksfdjjjfjhdkjsfhsdkfhkjdf
+
 
 
 
@@ -209,9 +209,9 @@ body {
     font-weight: 510;
     background: linear-gradient(to right, rgb(60, 110, 228), rgb(85, 192, 136));
     background-clip: text;
-	text-color: red ;
-    -webkit-text-fill-color: transparent;
-
+	color:#0085ff;
+}
+	
 }
 
 .home-sci {
@@ -381,7 +381,7 @@ body {
     padding-bottom: 1.7rem;
     background: linear-gradient(to right, rgb(60, 110, 228), rgb(85, 192, 136));
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color:#00d0ff;
     animation: slideTop 1s ease forwards;
     animation-delay: 0.2s;
 
@@ -1785,6 +1785,7 @@ footer {
 
   }
   */
+
 
 
 
