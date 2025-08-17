@@ -22,14 +22,14 @@ var typed2 = new Typed(".text2", {
 });
 
 var typed3 = new Typed(".text3", {
-    strings: ["Web Developer","Web Designer",  "Graphic Designer"],
+    strings: ["Quality Assurance Analyst"],
     typeSpeed: 130,
     backSpeed: 100,
     backDelay: 1200,
     loop: true
 });
 var typed4 = new Typed(".text4", {
-    strings: [ "Web Developer","Web Designer", "Graphic Designer"],
+    strings: [ "Quality Assurance Analyst"],
     typeSpeed: 150,
     backSpeed: 140,
     backDelay: 150,
