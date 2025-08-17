@@ -22,14 +22,14 @@ var typed2 = new Typed(".text2", {
 });
 
 var typed3 = new Typed(".text3", {
-    strings: ["Quality Assurance Analyst","Quality Assurance Analyst"],
+    strings: ["Quality Assurance Analyst","QA Analyst"],
     typeSpeed: 130,
     backSpeed: 100,
     backDelay: 1200,
     loop: true
 });
 var typed4 = new Typed(".text4", {
-    strings: [ "Quality Assurance Analyst"],
+    strings: ["Quality Assurance Analyst","QA Analyst"],
     typeSpeed: 150,
     backSpeed: 140,
     backDelay: 150,
@@ -316,6 +316,7 @@ navbarLinks.forEach(link => {
         }
     });
 });
+
 
 
 
