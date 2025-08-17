@@ -36,6 +36,11 @@ var typed4 = new Typed(".text4", {
     loop: true
 });
 
+
+/*
+
+
+
 var typed4 = new Typed(".sub-title-up .text6", {
     strings: [ "Creative Website Designings ","Responsive Website Creations ", "User friendly Graphic Designs"],
     typeSpeed: 170,
@@ -44,6 +49,8 @@ var typed4 = new Typed(".sub-title-up .text6", {
     
     loop: true
 });
+
+*/   
 
 
 //=================================  this is for filter buttons ==========================================//
@@ -309,6 +316,7 @@ navbarLinks.forEach(link => {
         }
     });
 });
+
 
 
 
