@@ -209,6 +209,7 @@ body {
     font-weight: 510;
     background: linear-gradient(to right, rgb(60, 110, 228), rgb(85, 192, 136));
     background-clip: text;
+	text-color: red ;
     -webkit-text-fill-color: transparent;
 
 }
@@ -1784,5 +1785,6 @@ footer {
 
   }
   */
+
 
 
