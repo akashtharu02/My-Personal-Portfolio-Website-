@@ -22,7 +22,7 @@ var typed2 = new Typed(".text2", {
 });
 
 var typed3 = new Typed(".text3", {
-    strings: ["Quality Assurance Analyst"],
+    strings: ["Quality Assurance Analyst","Quality Assurance Analyst"],
     typeSpeed: 130,
     backSpeed: 100,
     backDelay: 1200,
