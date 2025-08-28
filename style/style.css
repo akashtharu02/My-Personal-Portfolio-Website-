@@ -12,10 +12,6 @@
 
 }
 
-
-
-
-
 :root {
     --text-color: #f5f5f5;
     --hover-color: #12f7ff;
@@ -121,7 +117,7 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 90px 7% 0 7%;
+    padding: 80px 7% 0 7%;
     overflow: hidden;
 
 }
@@ -160,25 +156,28 @@ body {
 }
 
 .home-content h3 {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: 700;
     opacity: 0;
     animation: slideBottom 1.4s ease forwards;
     animation-delay: .5s;
     margin-bottom: 15px;
+    color: rgb(79, 196, 219);
 
 }
 
 .home-content h3:nth-of-type(2) {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     margin-top: 0;
     animation: slideBottom 1.4s ease forwards;
     animation-delay: 0.45s;
 
+
+
 }
 
 .home-content h3 span {
-    color: #0ef;
+    color: rgb(0, 195, 255);
 
 }
 
@@ -209,9 +208,10 @@ body {
     font-weight: 510;
     background: linear-gradient(to right, rgb(60, 110, 228), rgb(85, 192, 136));
     background-clip: text;
-	color: #0085ff;
-}
-	
+    color: #0085ff;
+    line-height: 1.35;
+
+
 }
 
 .home-sci {
@@ -305,8 +305,8 @@ body {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
-   
-   
+
+
 
 }
 
@@ -327,8 +327,8 @@ body {
     padding: 0 0 10% 10%;
     margin-top: -4%;
     text-align: left;
-    
-  
+
+
 
 }
 
@@ -381,7 +381,7 @@ body {
     padding-bottom: 1.7rem;
     background: linear-gradient(to right, rgb(60, 110, 228), rgb(85, 192, 136));
     background-clip: text;
-    color: #00d0ff;
+    
     animation: slideTop 1s ease forwards;
     animation-delay: 0.2s;
 
@@ -397,13 +397,14 @@ body {
 
 /*  ========================= this is section 6 education, Akash Tharu =====================  */
 
-.education{
+.education {
     display: none;
-	width: 100%;
-	min-height: 100vh;
-	justify-content: center;
-	align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
+
 .education .main-text {
     text-align: center;
     margin: -20px 0 5px 0;
@@ -430,74 +431,84 @@ body {
     -webkit-text-fill-color: transparent;
 
 }
-.education .container{
-	width: 100%;
-	padding: 30px 10% 60px 10%;
-	padding-right: calc(10% - 30px);
+
+.education .container {
+    width: 100%;
+    padding: 30px 10% 60px 10%;
+    padding-right: calc(10% - 30px);
     display: block;
-    
+
 }
-.education .row{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-column-gap: 20px;
+
+.education .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
 }
-.education .col header.title{
-	font-family: helvetica;
-	color: #1de1ff;
-	padding: 0px 0px 20px 30px;
+
+.education .col header.title {
+    font-family: helvetica;
+    color: #1de1ff;
+    padding: 0px 0px 20px 30px;
     font-size: 17px;
 }
-.education .col .contents{
-	padding: 0px 30px;
-	border-left: 2px solid #bababa;
+
+.education .col .contents {
+    padding: 0px 30px;
+    border-left: 2px solid #bababa;
 }
-.education .col .contents .box{
-	position: relative;
-	padding: 20px;
-	border: 1px solid #180c47;
-	background-color: #0a00385d;
-	transition: all 0.4s;
-	margin-bottom: 20px;
+
+.education .col .contents .box {
+    position: relative;
+    padding: 20px;
+    border: 1px solid #180c47;
+    background-color: #0a00385d;
+    transition: all 0.4s;
+    margin-bottom: 20px;
 }
-.education .col .contents .box:hover{
-	box-shadow: 0px 3px 12px 0px #031960;
-	border: 1px solid transparent;
+
+.education .col .contents .box:hover {
+    box-shadow: 0px 3px 12px 0px #031960;
+    border: 1px solid transparent;
     transform: scale(1.02);
 }
-.education .col .contents .box::before{
-	content: '';
-	position: absolute;
-	width: 16px;
-	height: 16px;
-	border-radius: 50%;
-	right: calc(100% + 22px);
-	top: 0;
-	background-color: #67ff0f;
-	border: 2px solid white;
+
+.education .col .contents .box::before {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color: #67ff0f;
+    border: 2px solid white;
 }
-.education .box h4{
-	position: relative;
-	color: #65e01d;
+
+.education .box h4 {
+    position: relative;
+    color: #65e01d;
 }
-.education .box h3, 
-.education .box h3 a{
-	font-size: 19px;
-	padding: 10px 0px 8px;
-	font-family: helvetica;
-	color: rgba(255, 205, 25, 0.745);
+
+.education .box h3,
+.education .box h3 a {
+    font-size: 19px;
+    padding: 10px 0px 8px;
+    font-family: helvetica;
+    color: rgba(255, 205, 25, 0.745);
     text-decoration: underline;
 }
-.education .box h3:hover, 
-.education .box h3 a:hover{
-    
+
+.education .box h3:hover,
+.education .box h3 a:hover {
+
     color: #0021dd;
 }
 
-.education .box p{
-	line-height: 1.2;
-	color: #9a9797;
-	font-size: 15px;
+.education .box p {
+    line-height: 1.2;
+    color: #9a9797;
+    font-size: 15px;
 }
 
 
@@ -514,7 +525,7 @@ body {
     font-size: 20px;
     line-height: 1.4;
     padding: 5px 90px 60px 90px;
-    
+
 
 }
 
@@ -565,7 +576,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
     grid-gap: 40px;
     animation: slideTop 1.4s ease forwards;
-   
+
 
 }
 
@@ -580,13 +591,13 @@ body {
         2px 2px 40px #033878f7;
 
 
-   
-    
+
+
 }
 
 .services-list div:hover {
     background-color: #24084f;
-  
+
 
 }
 
@@ -660,7 +671,7 @@ body {
 
 .portfolio {
     padding: 60px 10% 60px 10%;
-     min-height: 100vh;
+    min-height: 100vh;
 
 }
 
@@ -726,7 +737,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     gap: 2rem;
-   
+
 
 }
 
@@ -738,7 +749,7 @@ body {
     display: flex;
     grid-template-rows: 1fr auto;
     align-items: center;
-    border: 2px solid  #12f7ff;
+    border: 2px solid #12f7ff;
     box-shadow: 0 0 0.5rem #12f7ff;
 
 }
@@ -804,25 +815,38 @@ body {
 
 .port-content a {
     background: #fff;
-    border-radius: 50%; /* Ensure it's fully round */
-    display: inline-flex; /* Use inline-flex to center content */
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center the content vertically */
-    width: 50px; /* Set a fixed width */
-    height: 50px; /* Set a fixed height to match width */
-    border: 1px solid #fff; /* Optional border */
-    outline: 2px solid; /* Optional outline */
-    font-size: 1.3rem; /* Font size */
-    color: #292e33; /* Text color */
-    font-weight: 550; /* Text weight */
-    text-align: center; /* Center text */
-    line-height: 50px; /* Match line height to height for vertical centering */
+    border-radius: 50%;
+    /* Ensure it's fully round */
+    display: inline-flex;
+    /* Use inline-flex to center content */
+    justify-content: center;
+    /* Center the content horizontally */
+    align-items: center;
+    /* Center the content vertically */
+    width: 50px;
+    /* Set a fixed width */
+    height: 50px;
+    /* Set a fixed height to match width */
+    border: 1px solid #fff;
+    /* Optional border */
+    outline: 2px solid;
+    /* Optional outline */
+    font-size: 1.3rem;
+    /* Font size */
+    color: #292e33;
+    /* Text color */
+    font-weight: 550;
+    /* Text weight */
+    text-align: center;
+    /* Center text */
+    line-height: 50px;
+    /* Match line height to height for vertical centering */
 
 }
 
 
 .port-content a:hover {
-background: rgba(12, 12, 171, 0.203);
+    background: rgba(12, 12, 171, 0.203);
 
 
 }
@@ -923,26 +947,26 @@ background: rgba(12, 12, 171, 0.203);
 }
 
 .skill-bar .bar .html {
-    width: 80%;
+    width: 90%;
     animation: html 2s;
 
 }
 
 .skill-bar .bar .css {
-    width: 70%;
-    animation: css 2s;
+    width: 80%;
+    animation: css 3s;
 
 }
 
 .skill-bar .bar .javascript {
-    width: 50%;
-    animation: javascript 2s;
+    width: 75%;
+    animation: javascript 4s;
 
 }
 
 .skill-bar .bar .java {
-    width: 45%;
-    animation: java 2.6s;
+    width: 40%;
+    animation: java 5s;
 
 }
 
@@ -1006,7 +1030,7 @@ background: rgba(12, 12, 171, 0.203);
 .points.marked {
     animation: glow 0.06s linear forwards;
     animation-delay: calc(var(--i) * 0.04s);
-   
+
 }
 
 
@@ -1190,7 +1214,7 @@ input::placeholder,
 textarea::placeholder {
     font-size: 14px;
     color: rgba(0, 0, 0, 0.5);
-   
+
 }
 
 .contact-form form input:hover,
@@ -1236,10 +1260,9 @@ textarea::placeholder {
     box-shadow: 0 0 5px cyan,
         0 0 25px cyan, 0 0 50px cyan,
         0 0 100px cyan, 0 0 200px cyan;
-        background: #4f4cad
-
+    background: #4f4cad
 }
- 
+
 
 /* ===================== this is section 9 Skills, Akash Tharu ====================  */
 
@@ -1247,15 +1270,15 @@ footer {
     text-align: center;
     padding: 18px;
     background-color: #0a0e2c9f;
-    color:rgb(99, 91, 91);
+    color: rgb(99, 91, 91);
     width: 100%;
     position: relative;
     letter-spacing: 1px;
     font-size: 12px;
     font-weight: 700;
     position: absolute;
-    
-    
+
+
 }
 
 
@@ -1295,8 +1318,8 @@ footer {
 
 @media only screen and (max-width: 768px) {
 
-    
-   
+
+
     /*********************** Media Header-1, Akash Tharu ************************/
 
     .header {
@@ -1455,17 +1478,18 @@ footer {
 
     }
 
-    
 
-     /******************************** Media Services-6 , Akash Tharu *******************************/
 
-     .education{
+    /******************************** Media Services-6 , Akash Tharu *******************************/
+
+    .education {
         padding-top: 100px;
     }
 
-     .education.container {
+    .education.container {
         width: 100;
     }
+
     .education .row {
         grid-template-columns: 1fr;
     }
@@ -1493,19 +1517,19 @@ footer {
         padding: 5px 15%;
     }
 
-   /******************************** Media Sportfolio-5 , Akash Tharu *******************************/
-    
+    /******************************** Media Sportfolio-5 , Akash Tharu *******************************/
 
-   .portfolio{
-    padding-top: 20px;
-    padding-bottom: 25px;
-}
+
+    .portfolio {
+        padding-top: 20px;
+        padding-bottom: 25px;
+    }
 
 
     /************************************* Media Skills-7 , Akash Tharu ************************************/
 
     .skills {
-        padding:5px 5% 50px 5%;
+        padding: 5px 5% 50px 5%;
         text-align: center;
 
     }
@@ -1527,22 +1551,25 @@ footer {
 
 
     }
+
     .contact-text {
-       margin-bottom: 40px;
-    
-    }
-    .contact-text h4 {
-   
-      text-align: center;
-    
-    }
-    .contact-form h4 {
-        padding: 5px 0 25px 0;
-       text-align: center;
-    
+        margin-bottom: 40px;
+
     }
 
-/*********************** Media footer-9, Akash Tharu *************************************/
+    .contact-text h4 {
+
+        text-align: center;
+
+    }
+
+    .contact-form h4 {
+        padding: 5px 0 25px 0;
+        text-align: center;
+
+    }
+
+    /*********************** Media footer-9, Akash Tharu *************************************/
 
     footer {
         padding: 15px;
@@ -1551,190 +1578,191 @@ footer {
         letter-spacing: 0px;
     }
 
-}   
-    /*================= out of media view more then 769px, hide content , Akash Tharu =========*/
+}
 
-    @media (min-width: 769px) {
-        .header .close-btn {
-            display: none;
+/*================= out of media view more then 769px, hide content , Akash Tharu =========*/
 
-        }
-
-        .hamburger {
-            display: none;
-
-        }
-
-        .img-for-mobile {
-            display: none;
-
-        }
+@media (min-width: 769px) {
+    .header .close-btn {
+        display: none;
 
     }
 
-
-    /*================ out of media view more then 1000px, hide content , Akash Tharu ========*/
-
-    @media (max-width: 1000px) {
-
-        marquee {
-            display: none;
-
-        }
-    }
-
-
-
-    /*========================================== This is Keyframes animation , Akash Tharu ==================================*/
-    /*************************************************************************************************************************/
-
-    @keyframes slideRight {
-        0% {
-            transform: translateX(-100px);
-            opacity: 0;
-        }
-
-        100% {
-            transform: translateX(0px);
-            opacity: 1;
-        }
-    }
-
-    @keyframes slideTop {
-        0% {
-            transform: translateY(100px);
-            opacity: 0;
-        }
-
-        100% {
-            transform: translateY(0px);
-            opacity: 1;
-        }
-    }
-
-    @keyframes slideBottom {
-        0% {
-            transform: translateY(-100px);
-            opacity: 0;
-        }
-
-        100% {
-            transform: translateY(0px);
-            opacity: 1;
-        }
-    }
-
-    @keyframes slideLeft {
-        0% {
-            transform: translateX(100px);
-            opacity: 0;
-        }
-
-        100% {
-            transform: translateX(0px);
-            opacity: 1;
-        }
-    }
-
-
-    /*-------------------------keyframes for skills section ----------------*/
-
-    @keyframes morph {
-
-        0%,
-        100% {
-            border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
-
-        }
-
-        30% {
-            border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
-        }
-
-        60% {
-            border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
-        }
-
-        80% {
-            border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
-        }
+    .hamburger {
+        display: none;
 
     }
 
-    /*-----------------------------keyframes for technical skill------------*/
+    .img-for-mobile {
+        display: none;
 
-    @keyframes html {
-        0% {
-            width: 0%;
-        }
-
-        100% {
-            width: 90%;
-        }
     }
 
-    @keyframes css {
-        0% {
-            width: 0%;
-        }
+}
 
-        100% {
-            width: 80%;
-        }
+
+/*================ out of media view more then 1000px, hide content , Akash Tharu ========*/
+
+@media (max-width: 1000px) {
+
+    marquee {
+        display: none;
+
+    }
+}
+
+
+
+/*========================================== This is Keyframes animation , Akash Tharu ==================================*/
+/*************************************************************************************************************************/
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
     }
 
-    @keyframes javascript {
-        0% {
-            width: 0%;
-        }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
 
-        100% {
-            width: 75%;
-        }
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
     }
 
-    @keyframes java {
-        0% {
-            width: 0%;
-        }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
 
-        100% {
-            width: 40%;
-        }
+@keyframes slideBottom {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
     }
 
-    /*--------------------------keyframes for professional skill---------*/
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
 
-    @keyframes glow {
-        0% {
-            background: #250821;
-            box-shadow: none;
-        }
-
-        100% {
-            background: #12f7ff;
-            box-shadow: 0 0 .7rem #12f7ff;
-        }
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
     }
 
-    /*-------------------------- keyframe for Animation moving stars----------*/
-
-    @keyframes moveStar {
-        from {
-            transform: translateY(100vh);
-
-        }
-
-        from {
-            transform: translateY(10vh);
-
-        }
-
-        to {
-            transform: translateY(-10px);
-
-        }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
     }
+}
+
+
+/*-------------------------keyframes for skills section ----------------*/
+
+@keyframes morph {
+
+    0%,
+    100% {
+        border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+
+    }
+
+    30% {
+        border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    }
+
+    60% {
+        border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    }
+
+    80% {
+        border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+    }
+
+}
+
+/*-----------------------------keyframes for technical skill------------*/
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+@keyframes java {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 40%;
+    }
+}
+
+/*--------------------------keyframes for professional skill---------*/
+
+@keyframes glow {
+    0% {
+        background: #250821;
+        box-shadow: none;
+    }
+
+    100% {
+        background: #12f7ff;
+        box-shadow: 0 0 .7rem #12f7ff;
+    }
+}
+
+/*-------------------------- keyframe for Animation moving stars----------*/
+
+@keyframes moveStar {
+    from {
+        transform: translateY(100vh);
+
+    }
+
+    from {
+        transform: translateY(10vh);
+
+    }
+
+    to {
+        transform: translateY(-10px);
+
+    }
+}
 
 
 /*++++++++++++++++++++++++++++++++++ Website scroll animation , parallax -------- tem-not use +++++++++++++++++++
@@ -1768,7 +1796,7 @@ footer {
 +++++++++++++++++++++++++++++++++++++*/
 
 
-  /* -------------------------Custom Alert Styling for impest mode ------------------------- 
+/* -------------------------Custom Alert Styling for impest mode ------------------------- 
 .custom-alert {
   
     position: fixed;
@@ -1785,8 +1813,3 @@ footer {
 
   }
   */
-
-
-
-
-
