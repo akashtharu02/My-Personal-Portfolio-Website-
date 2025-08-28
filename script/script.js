@@ -20,14 +20,14 @@ var typed2 = new Typed(".text2", {
 });
 
 var typed3 = new Typed(".text3", {
-  strings: ["Quality Tester", "QA Analist", "Software Tester"],
+  strings: ["Quality Tester", "QA Analyst", "Software Tester"],
   typeSpeed: 130,
   backSpeed: 100,
   backDelay: 1200,
   loop: true,
 });
 var typed4 = new Typed(".text4", {
-  strings: ["Quality Tester", "QA Analist", "Software Tester"],
+  strings: ["Quality Tester", "QA Analyst", "Software Tester"],
   typeSpeed: 150,
   backSpeed: 140,
   backDelay: 150,
@@ -66,6 +66,84 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+//=========================== thihs is for Hidden section Education =====================///
+
+document.querySelectorAll(".forEducationHide").forEach((button) => {
+  button.addEventListener("click", function (event) {
+    event.preventDefault();
+    const hiddenSection = document.getElementById("education");
+    const hideButton = document.getElementById("hideSectionButton");
+    const isHidden =
+      hiddenSection.style.display === "none" ||
+      hiddenSection.style.display === "";
+
+    hiddenSection.style.display = isHidden ? "block" : "none";
+    hideButton.style.display = isHidden ? "inline-block" : "none";
+
+    document.querySelectorAll(".forEducationHide").forEach((btn) => {
+      btn.textContent = isHidden
+        ? btn.getAttribute("data-toggle-text")
+        : btn.getAttribute("data-default-text");
+    });
+
+    // Scroll to Education section, positioning it 50% from the top
+    if (isHidden) {
+      setTimeout(() => {
+        const offset =
+          hiddenSection.getBoundingClientRect().top +
+          window.scrollY -
+          window.innerHeight / 2;
+        window.scrollTo({ top: offset, behavior: "smooth" });
+      }, 100); // Small delay for a smooth effect
+    }
+  });
+});
+
+document
+  .getElementById("hideSectionButton")
+  .addEventListener("click", function () {
+    document.getElementById("education").style.display = "none";
+    this.style.display = "none";
+    document.querySelectorAll(".forEducationHide").forEach((btn) => {
+      btn.textContent = btn.getAttribute("data-default-text");
+    });
+  });
+
+//=========================== thihs is for Hidden Section Services =====================///
+
+const toggleBtns = document.querySelectorAll(".toggleServicesBtn");
+const servicesSection = document.getElementById("services");
+const closeBtn = document.getElementById("closeServices");
+
+// Function to toggle the services section
+function toggleServices() {
+  const isHidden =
+    servicesSection.style.display === "none" ||
+    servicesSection.style.display === "";
+
+  servicesSection.style.display = isHidden ? "block" : "none";
+
+  if (isHidden) {
+    setTimeout(() => {
+      const offset =
+        servicesSection.getBoundingClientRect().top +
+        window.scrollY -
+        window.innerHeight / 2.2;
+      window.scrollTo({ top: offset, behavior: "smooth" });
+    }, 100); // Small delay for smooth effect
+  }
+}
+
+// Add event listeners to all buttons
+toggleBtns.forEach((btn) => {
+  btn.addEventListener("click", toggleServices);
+});
+
+// Close the services section
+closeBtn.addEventListener("click", function () {
+  servicesSection.style.display = "none";
+});
+
 //====================== This is for professional skill animation =================================//
 
 const circles = document.querySelectorAll(".circle");
@@ -98,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
   starContainer.classList.add("stars");
   document.body.appendChild(starContainer); // Append to the body
 
-  const numStars = 50; // Set the number of stars
+  const numStars = 16; // Set the number of stars
 
   for (let i = 0; i < numStars; i++) {
     const star = document.createElement("div");
@@ -115,6 +193,33 @@ document.addEventListener("DOMContentLoaded", function () {
     starContainer.appendChild(star);
   }
 });
+
+//====================== Website scroll animation , parallax ---tem-not use ====================//
+
+/*
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show-items");
+        } else {
+            entry.target.classList.remove("show-items");
+        }
+    });
+});
+
+const scrollScale = document.querySelectorAll(".scroll-scale");
+scrollScale.forEach((el) => observer.observe(el));
+
+const scrollBottom = document.querySelectorAll(".scroll-bottom");
+scrollBottom.forEach((el) => observer.observe(el));
+
+const scrollTop = document.querySelectorAll(".scroll-top");
+scrollTop.forEach((el) => observer.observe(el));
+
+
+
+*/
 
 /*
 
@@ -194,108 +299,3 @@ navbarLinks.forEach((link) => {
     }
   });
 });
-
-//=========================== thihs is for Hidden section Education =====================///
-
-document.querySelectorAll(".forEducationHide").forEach((button) => {
-  button.addEventListener("click", function (event) {
-    event.preventDefault();
-    const hiddenSection = document.getElementById("education");
-    const hideButton = document.getElementById("hideSectionButton");
-    const isHidden =
-      hiddenSection.style.display === "none" ||
-      hiddenSection.style.display === "";
-
-    hiddenSection.style.display = isHidden ? "block" : "none";
-    hideButton.style.display = isHidden ? "inline-block" : "none";
-
-    document.querySelectorAll(".forEducationHide").forEach((btn) => {
-      btn.textContent = isHidden
-        ? btn.getAttribute("data-toggle-text")
-        : btn.getAttribute("data-default-text");
-    });
-
-    // Scroll to Education section, positioning it 50% from the top
-    if (isHidden) {
-      setTimeout(() => {
-        const offset =
-          hiddenSection.getBoundingClientRect().top +
-          window.scrollY -
-          window.innerHeight / 2;
-        window.scrollTo({ top: offset, behavior: "smooth" });
-      }, 100); // Small delay for a smooth effect
-    }
-  });
-});
-
-document
-  .getElementById("hideSectionButton")
-  .addEventListener("click", function () {
-    document.getElementById("education").style.display = "none";
-    this.style.display = "none";
-    document.querySelectorAll(".forEducationHide").forEach((btn) => {
-      btn.textContent = btn.getAttribute("data-default-text");
-    });
-  });
-
-//=========================== this is for Hidden Section Services =====================///
-
-const toggleBtns = document.querySelectorAll(".toggleServicesBtn");
-const servicesSection = document.getElementById("services");
-const closeBtn = document.getElementById("closeServices");
-
-// Function to toggle the services section
-function toggleServices() {
-  const isHidden =
-    servicesSection.style.display === "none" ||
-    servicesSection.style.display === "";
-
-  servicesSection.style.display = isHidden ? "block" : "none";
-
-  if (isHidden) {
-    setTimeout(() => {
-      const offset =
-        servicesSection.getBoundingClientRect().top +
-        window.scrollY -
-        window.innerHeight / 2.2;
-      window.scrollTo({ top: offset, behavior: "smooth" });
-    }, 100); // Small delay for smooth effect
-  }
-}
-
-// Add event listeners to all buttons
-toggleBtns.forEach((btn) => {
-  btn.addEventListener("click", toggleServices);
-});
-
-// Close the services section
-closeBtn.addEventListener("click", function () {
-  servicesSection.style.display = "none";
-});
-
-//====================== Website scroll animation , parallax ---tem-not use ====================//
-
-/*
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("show-items");
-        } else {
-            entry.target.classList.remove("show-items");
-        }
-    });
-});
-
-const scrollScale = document.querySelectorAll(".scroll-scale");
-scrollScale.forEach((el) => observer.observe(el));
-
-const scrollBottom = document.querySelectorAll(".scroll-bottom");
-scrollBottom.forEach((el) => observer.observe(el));
-
-const scrollTop = document.querySelectorAll(".scroll-top");
-scrollTop.forEach((el) => observer.observe(el));
-
-
-
-*/

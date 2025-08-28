@@ -117,7 +117,7 @@ body {
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 80px 7% 0 7%;
+    padding: 110px 7% 0 7%;
     overflow: hidden;
 
 }
@@ -146,7 +146,7 @@ body {
 .home-content {
     max-width: 600px;
     text-align: center;
-    padding: 65px 0 40px 0;
+    padding: 15px 0 40px 0;
 
 }
 
@@ -167,12 +167,11 @@ body {
 }
 
 .home-content h3:nth-of-type(2) {
+    font-size: 26px;
     margin-bottom: 35px;
     margin-top: 0;
     animation: slideBottom 1.4s ease forwards;
     animation-delay: 0.45s;
-
-
 
 }
 
@@ -187,12 +186,11 @@ body {
     opacity: 0;
     animation: slideRight 1.4s ease forwards;
     animation-delay: 0.50s;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 
 }
 
 .home-content h1 span {
-    font-size: 56px;
     font-weight: 700;
     background: linear-gradient(to right, rgb(47, 255, 24), rgb(180, 68, 217));
     background-clip: text;
@@ -210,7 +208,6 @@ body {
     background-clip: text;
     color: #0085ff;
     line-height: 1.35;
-
 
 }
 
@@ -361,27 +358,28 @@ body {
 .about-text h4 {
     font-size: 25px;
     font-weight: 600px;
-    line-height: 1.7;
-    margin: 15px 0 30px;
+    line-height: 1.9;
+    margin: 14px 0 20px;
+    color: rgb(79, 196, 219);
 
 }
 
 .about-text h4 span {
     font-size: 25px;
     font-weight: 600px;
-    color: #0ef;
-    line-height: 1.7;
-    margin: 15px 0 30px;
+
+    color: rgb(4, 164, 212);
+
 
 }
 
 .about-text p {
     font-size: 20px;
-    line-height: 1.3;
+    line-height: 1.35;
     padding-bottom: 1.7rem;
     background: linear-gradient(to right, rgb(60, 110, 228), rgb(85, 192, 136));
     background-clip: text;
-    
+    color: #017892;
     animation: slideTop 1s ease forwards;
     animation-delay: 0.2s;
 
@@ -407,7 +405,7 @@ body {
 
 .education .main-text {
     text-align: center;
-    margin: -20px 0 5px 0;
+    margin: 10px 0 5px 0;
 
 }
 
@@ -670,7 +668,7 @@ body {
 /*  ====================== this is section 5 portfolio project, Akash Tharu ======================  */
 
 .portfolio {
-    padding: 60px 10% 60px 10%;
+    padding: 70px 10% 60px 10%;
     min-height: 100vh;
 
 }
@@ -855,13 +853,13 @@ body {
 /*  ========================= this is section 7 Skills, Akash Tharu =====================  */
 
 .skills {
-    padding: 20px 180px 60px 180px;
+    padding: 50px 180px 50px 180px;
 
 }
 
 .skills .main-text {
     text-align: center;
-    margin: 50px 0 70px 0;
+    margin: 50px 0 50px 0;
 
 }
 
@@ -920,10 +918,15 @@ body {
 .skill-technical .skill-bar .info {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 0px 10px;
 
 }
+
+.skill-technical .skill-bar .info .text {
+    display: flex;
+}
+
+
 
 .skill-technical .skill-bar .bar {
     width: 100%;
@@ -947,26 +950,26 @@ body {
 }
 
 .skill-bar .bar .html {
-    width: 90%;
+    width: 82%;
     animation: html 2s;
 
 }
 
 .skill-bar .bar .css {
-    width: 80%;
-    animation: css 3s;
+    width: 82%;
+    animation: css 2s;
 
 }
 
 .skill-bar .bar .javascript {
-    width: 75%;
-    animation: javascript 4s;
+    width: 82%;
+    animation: javascript 2s;
 
 }
 
 .skill-bar .bar .java {
-    width: 40%;
-    animation: java 5s;
+    width: 82%;
+    animation: java 2s;
 
 }
 
@@ -987,8 +990,9 @@ body {
 
 .professional .box .text {
     text-align: center;
-    color: #fff;
-    font-size: 1rem;
+    color: #eaff01;
+    font-size: 1.1rem;
+
 
 }
 
@@ -1044,7 +1048,7 @@ body {
     background: linear-gradient(to left, rgb(47, 255, 24), rgb(180, 68, 217));
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 35px;
+    font-size: 25px;
     margin-bottom: 35px;
     text-align: center;
     padding: 20px 10% 0 10%;
@@ -1080,17 +1084,18 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    background: #081e2ebb;
+    background: #081d2cc8;
 
 }
 
 .contact-form {
     position: relative;
-    text-align: center;
     font-size: 17.5px;
-    color: whitesmoke;
+    font-weight: 550;
+    color: rgb(160, 162, 170);
     font-family: 550;
     background: #081e2ec8;
+
 
 }
 
@@ -1241,10 +1246,10 @@ textarea::placeholder {
     width: 100%;
     max-width: 300px;
     padding: 10px 0;
-    background: #4c137e;
+    background: #031123;
     border-radius: 40px;
     font-size: 15px;
-    color: #040d14b2;
+    color: #00d0ffb2;
     letter-spacing: 2px;
     text-decoration: none;
     font-weight: 600;
@@ -1260,7 +1265,8 @@ textarea::placeholder {
     box-shadow: 0 0 5px cyan,
         0 0 25px cyan, 0 0 50px cyan,
         0 0 100px cyan, 0 0 200px cyan;
-    background: #4f4cad
+    background: #00FFFF;
+    color: #27303a;
 }
 
 
@@ -1464,8 +1470,8 @@ footer {
     }
 
     .about-text p {
-        font-size: 14.5px;
-        margin: 0 -15px 0 -20px;
+        font-size: 10px;
+        margin: -10px -15px 0 -20px;
         padding-bottom: 1rem;
         text-align: justify;
 
