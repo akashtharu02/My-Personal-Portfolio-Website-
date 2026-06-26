@@ -1,66 +1,47 @@
 # PortfolioLast
 
-<!-- **Live link :** https://akashtharu.com.np </br>
-
-
-
-
-
-
-
-<img width="1918" height="1032" alt="Screenshot 2025-09-05 181116" src="https://github.com/user-attachments/assets/8b2ce3cd-73c1-45dc-bacc-74f658681eea" /> -->
-
-
-
-# PortfolioLast
-
-A polished personal portfolio website designed to highlight creative work, professional experience, and personal branding with a modern, responsive design.
+A personal portfolio website built to showcase my work, skills, and contact information in a clean and professional design.
 
 ## Live Demo
 
 - **Website:** https://akashtharu.com.np
 
-## Overview
+## About this Project
 
-PortfolioLast is a lightweight static website built using HTML, CSS, and JavaScript. It is optimized for performance and easy customization to showcase your portfolio effectively.
+I built this portfolio as my personal online presence to highlight projects, technical skills, and the services I offer. The site is designed to be lightweight, visually engaging, and easy to update. It includes sections for a hero banner, skills overview, project highlights, and contact information.
 
-## Features
+This repository contains the source files for my personal portfolio website. It is my professional online presence, built to present my work, skills, and contact information.
 
-- Responsive layout for desktop and mobile
-- Smooth navigation and interactive elements
-- Lightweight static structure for fast loading
-- Simple updates for content and styling
+## What I Included
 
+- A responsive hero section with a personal introduction
+- Sections to present skills, experience, and project accomplishments
+- Smooth scrolling and interactive navigation controls
+- A clean layout that works well on mobile and desktop
+- Easy-to-update content and asset structure
 
-## Technology Stack
+## Technologies Used
 
-- HTML5
-- CSS3
-- JavaScript
+- HTML5 for semantic structure
+- CSS3 for layout, styling, and responsive design
+- JavaScript for interactivity and user experience enhancements
 
 ## Project Structure
 
-- `index.html` — main landing page
-- `style/style.css` — primary stylesheet
-- `style.css` — additional styles
-- `script/script.js` — interactive page behavior
-- `script/myuse.js` — supporting JavaScript utilities
-- `img/` — image and visual assets
-- `CNAME` — custom domain configuration
-- `robots.txt` — crawler and SEO rules
-- `sitemap.xml` — site map for search engines
-
-
-## Getting Started
-
-1. Clone or download the repository.
-2. Open `index.html` in a browser to preview the site.
-3. Customize the content, styles, and scripts to match your personal brand.
+- `index.html` — main landing page and portfolio content
+- `style/style.css` — primary stylesheet with layout and components
+- `style.css` — additional global styles
+- `script/script.js` — main JavaScript behavior and page interactions
+- `script/myuse.js` — extra JavaScript utilities and helper functions
+- `img/` — image assets used by the website
+- `CNAME` — custom domain configuration for GitHub Pages
+- `robots.txt` — search engine crawling rules
+- `sitemap.xml` — site map for search engines and SEO
 
 ## Notes
 
-- This project is ready to deploy on GitHub Pages or any static hosting provider.
-- Update project showcases and contact details to reflect your latest work.
+- This website is ready for static hosting and does not require a backend.
+- It is built for my personal portfolio and is not intended as a public template.
 
 ## Screenshot
 
